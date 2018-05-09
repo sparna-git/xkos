@@ -450,7 +450,7 @@
 
 		<p>Also, classification items of a given levels usually have a code (expressed by the <code>skos:notation</code> property) that conforms to a specific structure. For example, the NACE sections are identified by a capital letter between A and U; NACE divisions are identified by two-digits codes, etc. In order to capture this information, XKOS defines the <code>xkos:notationPattern</code> property. This property is attached to a classification level and should contain a regular expression refecting the code structure of the items of this level.</p>
 
-		<p>Classification levels can be associated with <code>xkos:covers</code> and its subproperties <code>xkos:coversExhaustively</code> and <code>xkos:coversMutuallyExclusively</code> (cf. <a href="#levels">Section 5.4</a>). For example ...</p>
+		<p>Classification levels can be associated with <code>xkos:covers</code> and its subproperties <code>xkos:coversExhaustively</code> and <code>xkos:coversMutuallyExclusively</code> (cf. <a href="#levels">Section 5.4</a>). This is to accomodate edge cases such as classifications under construction, in which a level may not cover the domain field exhaustively, or classification variants, where the exhaustivity criteria is not maintained at a specific level.</p>
 	</section>
 
 	<section id="correspondences">
